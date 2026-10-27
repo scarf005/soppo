@@ -23,7 +23,7 @@
     foldKeymap,
   } from "@codemirror/language";
   import { highlightSelectionMatches, searchKeymap } from "@codemirror/search";
-  import { go } from "@codemirror/lang-go";
+  import { soppo } from "$lib/soppo";
   import { ayuDark } from "$lib/theme";
 
   interface Props {
@@ -69,7 +69,7 @@
           },
         },
       ]),
-      go(),
+      soppo(),
       ayuDark,
       indentUnit.of("\t"),
       EditorState.tabSize.of(4),
